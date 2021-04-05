@@ -31,12 +31,12 @@ function onLoad() {
         btn.text(characterStore[i]);
         searchHistory.append(btn);
         searchHistory.append(lineBreak);
-        btn.on("click", function (event) {
-          characterName = event.target.textContent;
-          youTubeVideo();
-          getAPI(characterName, renderCharacter);
+        // btn.on("click", function (event) {
+        //   characterName = event.target.textContent;
+        //   //youTubeVideo();
+        //   getAPI(characterName, renderCharacter);
 
-        });
+        // });
       }
     }
   }
@@ -58,12 +58,12 @@ function onClick() {
       var lineBreak = $("li");
       searchHistory.append(btn);
       searchHistory.append(lineBreak);
-      btn.on("click", function (event) {
-        characterName = event.target.textContent;
-        youTubeVideo();
-        getAPI(characterName, renderCharacter);
-        characterBio.innerHTML = " ";
-      });
+      //btn.on("click", function (event) {
+        //characterName = event.target.textContent;
+        //youTubeVideo();
+        //getAPI(characterName, renderCharacter);
+        //characterBio.innerHTML = " ";
+      //});
     }
   }
 }
@@ -87,6 +87,10 @@ function youTubeVideo() {
   fetch(youTubeAPIurl)
     .then(function (response) {
       console.log(response);
+      if (response.status != 200) {
+        var videoSRC = "https://www.youtube.com/embed/TcMBFSGVi1c";
+        document.getElementById("video").src = videoSRC;
+      } 
       return response.json();
     })
     .then(function (data) {

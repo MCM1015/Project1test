@@ -4,77 +4,67 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://unpkg.com/purecss@2.0.5/build/pure-min.css"
-        integrity="sha384-G9DpmGxRIF6tpgbrkZVcZDeIomEU22LgTguPAI739bbKytjPE/kHTK5YxjJAAEXC" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://unpkg.com/purecss@2.0.5/build/grids-responsive-min.css">
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
     <link rel="stylesheet" href="./assets/css/style.css">
-    <link rel="stylesheet" href="./assets/css/responsive.css">
     <title>Marvel Character Search....Search for your favorite Marvel Heroes!!!!!!</title>
 
 </head>
 
 <body>
+    <header>
+        <div class="flex">
+            <div id="header-html" class="flex-1">
+                <h1 class="text-xs sm:text-3xl text-white"> Marvel Character Search</h1>
+            </div>
+            <div id="modal" class="hidden flex-1">
+                <button id="modal-btn" class="button w-20 sm:w-48 text-xs sm:text-sm">Play Movie Trailer</button>
+
+                <div id="my-modal" class="modal">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <span class="close">&times;</span>
+                            <h2>Character Movie Trailer</h2>
+                        </div>
+                        <div class="modal-body">
+                            <iframe id="video" width="600" height="400" src="" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <form class="flex-1">
+                <div id="header-input">
+                    <input id="search-value" type="text" class="w-28 sm:w-96"
+                        placeholder="Search for character. Ex. Hulk, Thor, etc..." />
+                    <button id="searchBtn" type="submit" class="">Search</button>
+                </div>
+            </form>
+
+        </div>
+    </header>
     <div class="container">
-        <header>
-            <div class="pure-g">
-                <div class="pure-u-1-1">
 
-                    <form class="pure-form">
-                        <div id="header-html">
-                            <h1> Marvel Character Search</h1>
-                        </div>
-                        <div id="header-input">
-                            <input id="search-value" type="text" class="pure-input-rounded"
-                                placeholder="Search for character. Ex. Hulk, Thor, etc..." />
-                            <button id="searchBtn" type="submit" class="pure-button">Search</button>
-                        </div>
-                    </form>
+        <div><img src="assets/images/hero_image.jpeg" id="marvel-image" alt="Marvel Image"></div>
 
-                </div>
-        </header>
-        <div> <img src="assets/images/hero_image.jpeg" id="marvel-image" alt=""></div>
-
-        <div id="character-image" class="hidden">Character Image</div>
-        <div id="character-bio" class="hidden">
-            <h2>Character Description</h2>
-        </div>
-        <div id="character-comics" class="hidden">
-            <h2>Comics that feature this character</h2>
-        </div>
-        <div id="search-history" class="hidden">
-            <h2>Search History:</h2>
-        </div>
-        <!-- <div class="row" id="character-video" class="hidden">
-            <iframe id="video" width="600" height="400" src="" frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowfullscreen></iframe>
-        </div> -->
-        <div id="modal" class="hidden">
-            <button id="modal-btn" class="button">Play Movie Trailer</button>
-
-            <div id="my-modal" class="modal">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <span class="close">&times;</span>
-                        <h2>Character Movie Trailer</h2>
-                    </div>
-                    <div class="modal-body">
-                        <iframe id="video" width="600" height="400" src="" frameborder="0"
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                            allowfullscreen></iframe>
-                    </div>
-                </div>
+        <div class="grid grid-cols-1 lg:grid-cols-4 m-1 h-full">
+            <div id="character-image" class="hidden w-full mx-px">Character Image</div>
+            <div id="character-bio" class="hidden w-full mx-px">
+                <h2>Character Description</h2>
+            </div>
+            <div id="character-comics" class="hidden w-full mx-px">
+                <h2>Comics that feature this character</h2>
+            </div>
+            <div id="search-history" class="hidden w-full mx-px">
+                <h2>Search History:</h2>
             </div>
         </div>
 
-        <footer>
-            <div>
-                <p>Created by: THE Agile DEV Team; Data provided by Marvel. © 2021 MARVEL</p>
-            </div>
-        </footer>
-    </div>
     </div>
 
+    <footer>
+        <p>Created by: THE Agile DEV Team; Data provided by Marvel. © 2021 MARVEL</p>
+    </footer>
 
     <script src=" https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.9-1/core.js"></script>
@@ -82,8 +72,6 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
     <script src="./assets/js/script.js"></script>
-
-    </div>
 
 </body>
 

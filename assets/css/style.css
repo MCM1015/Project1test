@@ -1,167 +1,111 @@
-* {
-  box-sizing: border-box;
-}
-header {
-  /*background-image: url("hero_image.jpeg");*/
-  text-align: center;
-  background-color: black;
-  color: white;
-  padding: 20px;
-  justify-content: center;
-}
-body {
-  background-color: rgb(236, 29, 36);
-  height: 100%;
-}
-#header-html {
-  margin-left: 150px;
-  float: left;
-}
 
-#header-input {
-  float: right;
-}
-#search-value {
-  width: 400px;
-  margin-right: 10px;
-  margin-top: 20px;
-  height: 30px;
-  border-radius: 5px;
-}
-#searchBtn {
-  background-color: rgb(236, 29, 36);
-  margin-top: 20px;
-  height: 30px;
-  border-radius: 5px;
-}
-.searchAgain {
-  background-color: rgb(236, 29, 36);
-  margin-top: 20px;
-  width: 350px;
-  margin-left: 15px;
-  height: 30px;
-  border-radius: 5px;
-  font-weight: bold;
-}
-.hidden {
-  display: none;
-}
-#marvel-image {
-  height: 100%;
-  width: 100%;
-  text-align: center;
-  margin-top: 200px;
-  margin-left: 400px;
-  margin-bottom: 50px;
-}
-
-img {
-  height: 400px;
-  width: 500px;
-}
-/* #main-content {
-  margin: 0 auto;
-} */
-/* #character-info {
-  margin-top: 20px;
-  color: rgb(114, 5, 5);
-  text-align: center;
-  width: 100%;
-  align-items: center;
-} */
-footer {
-  background-color: black;
-  color: white;
-  text-align: center;
-  padding: 20px;
-}
-#character-image {
-  height: 400px;
-  max-width: 400px;
-  background-color: white;
-  margin-left: 300px;
-  margin-top: 50px;
-  margin-bottom: 50px;
-  border-radius: 5px;
-}
-#char-image {
-  height: 400px;
-  max-width: 400px;
-  border-radius: 5px;
-}
-#character-bio {
-  height: 400px;
-  max-width: 400px;
-  background-color: #bfd1e0;
-  text-align: justify;
-  padding: 20px 10px 10px 10px;
-  margin-top: 50px;
-  margin-left: 150px;
-  border-radius: 5px;
-}
-
-#character-comics {
-  overflow: scroll;
-  height: 400px;
-  max-width: 400px;
-  background-color: #bfd1e0;
-  text-align: justify;
-  margin: 50px;
-  margin-left: 150px;
-  padding: 20px 10px 10px 10px;
-  border-radius: 5px;
-}
-#search-history {
-  overflow: scroll;
-  height: 400px;
-  width: 400px;
-  margin-right: 300px;
-  margin-top: 50px;
-  margin-bottom: 50px;
-  background-color: #bfd1e0;
-  text-align: justify;
-  padding: 20px 10px 10px 10px;
-  border-radius: 5px;
-}
-#character-video {
-  text-align: center;
-}
-#video {
-  margin: 100px;
-}
-
-#comic-list {
-  text-align: justify;
-  padding: 40px 10px 10px 10px;
-}
-.c-issue {
-  background-color: rgb(236, 29, 36);
-  padding: 5px;
-  border-radius: 5px;
-}
-
-@media (min-width: 980px) {
-}
-root {
+.root {
   --modal-duration: 1s;
   --modal-color: #428bca;
 }
 
 body {
-  font-family: Arial, Helvetica, sans-serif;
-  background: #f4f4f4;
-  font-size: 17px;
-  line-height: 1.6;
-  display: flex;
+  margin: 1px;
   height: 100vh;
+  color: black;
+}
+
+header {
+  text-align: center;
+  background-color: black;
+  padding: 20px;
+  height: 20%;
+}
+
+footer {
+  background-color: black;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  height: 20%;
+}
+
+.container {
+  width: 100%; 
+  height: 60%;
+}
+
+.searchAgain {
+  background-color: rgb(236, 29, 36);
+  color: black;
+  margin-top: 5px;
+  width: 100%;
+  height: 30px;
+  border-radius: 5px;
+  font-weight: bold;
+} 
+
+.hidden {
+  display: none;
+}
+
+#marvel-image {
+  height: 100%;
+  width: 100%;
+}
+
+#searchBtn {
+  background-color: rgb(236, 29, 36);
+  border-radius: 5px;
+  padding: 5px;
+}
+
+ #character-info {
+  color: rgb(114, 5, 5);
+  text-align: center;
   align-items: center;
-  justify-content: center;
+} 
+
+#character-image {
+  background-color: white;
+  border: 1px black solid;
+  border-radius: 5px;
+}
+
+#char-image {
+  max-height: 400px;
+  max-width: 400px;
+}
+
+#character-bio {
+  background-color: #bfd1e0;
+  text-align: justify;
+  padding: 5px;
+  border-radius: 5px;
+  border: 1px black solid;
+}
+
+#character-comics {
+  overflow: scroll;
+  background-color: #bfd1e0;
+  text-align: justify;
+  padding: 5px;
+  border-radius: 5px;
+  border: 1px black solid;
+}
+
+#search-history {
+  overflow: scroll;
+  background-color: #bfd1e0;
+  text-align: justify;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+
+#comic-list {
+  text-align: justify;
+  padding: 10px;
 }
 
 .button {
   background: red;
   padding: 1em 2em;
-  color: black;
   border: 0;
   border-radius: 5px;
   cursor: pointer;
@@ -171,6 +115,7 @@ body {
   background: #3876ac;
 }
 
+/* modal */
 .modal {
   display: none;
   position: fixed;
@@ -189,56 +134,6 @@ body {
   box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 7px 20px 0 rgba(0, 0, 0, 0.17);
   animation-name: modalopen;
   animation-duration: var(--modal-duration);
-}
-
-.modal-header h2,
-.modal-footer h3 {
-  margin: 0;
-}
-
-.modal-header {
-  background: var(--modal-color);
-  padding: 15px;
-  color: #fff;
-  border-top-left-radius: 5px;
-  border-top-right-radius: 5px;
-}
-
-.modal-body {
-  padding: 10px 20px;
-  background: #fff;
-}
-
-.modal-footer {
-  background: var(--modal-color);
-  padding: 10px;
-  color: #fff;
-  text-align: center;
-  border-bottom-left-radius: 5px;
-  border-bottom-right-radius: 5px;
-}
-
-.close {
-  color: #ccc;
-  float: right;
-  font-size: 30px;
-  color: #fff;
-}
-
-.close:hover,
-.close:focus {
-  color: #000;
-  text-decoration: none;
-  cursor: pointer;
-}
-
-@keyframes modalopen {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
 }
 
 .modal-header h2,
