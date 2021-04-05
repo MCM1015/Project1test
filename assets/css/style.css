@@ -79,26 +79,21 @@ footer {
   padding: 5px;
   border-radius: 5px;
   border: 1px black solid;
-  height: 100%;
 }
 
 #character-comics {
-  overflow: scroll;
   background-color: #bfd1e0;
   text-align: justify;
   padding: 5px;
   border-radius: 5px;
   border: 1px black solid;
-  height: 100%;
 }
 
 #search-history {
-  overflow: scroll;
   background-color: #bfd1e0;
   text-align: justify;
   padding: 10px;
   border-radius: 5px;
-  height: 100%;
 }
 
 
