@@ -2,6 +2,7 @@
 var characterImage = document.querySelector("#character-image");
 var characterBio = document.querySelector("#character-bio");
 var characterComics = document.querySelector("#character-comics");
+var characterContainer = document.querySelector("#character-container");
 var characterSearch = document.getElementById("search-value");
 var characterArray = [];
 var searchHistory = $("#search-history");
@@ -46,6 +47,7 @@ function onClick() {
   $("#character-image").removeClass("hidden");
   $("#character-bio").removeClass("hidden");
   $("#character-comics").removeClass("hidden");
+  $("#character-container").removeClass("hidden");
   $("#search-history").removeClass("hidden");
   $("#marvel-image").addClass("hidden");
   $("#modal").removeClass("hidden");
