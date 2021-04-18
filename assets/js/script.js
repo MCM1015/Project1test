@@ -49,7 +49,6 @@ function onClick() {
   $("#character-comics").removeClass("hidden");
   $("#character-container").removeClass("hidden");
   $("#search-history").removeClass("hidden");
-  //$("#marvel-image").addClass("hidden");
   $("#modal").removeClass("hidden");
   if (localStorage.getItem("charactername") != "") {
     var characterStore = JSON.parse(localStorage.getItem("charactername"));
