@@ -28,6 +28,11 @@ footer {
   height: 100%;
 }
 
+.info {
+  height: 404px;
+  width: 484px;
+}
+
 .searchAgain {
   background-color: rgb(236, 29, 36);
   color: black;
